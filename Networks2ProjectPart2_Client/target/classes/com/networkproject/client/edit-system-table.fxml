@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.networkproject.client.EditSystemGroupController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.33331298828125" minWidth="5.99999475479126" prefWidth="25.9999942779541" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="544.0000052452087" minWidth="10.0" prefWidth="524.0000057220459" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.33331298828125" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="129.33331298828125" minHeight="0.0" prefHeight="38.33331108093262" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="302.00002034505206" minHeight="10.0" prefHeight="283.33331298828125" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="76.33331298828125" minHeight="10.0" prefHeight="70.00002034505206" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Label text="System Group Configurations" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="System contact">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Systemcontact" prefHeight="26.0" prefWidth="206.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="55.0">
+               <children>
+                  <Label text="System name ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Systemname" prefHeight="26.0" prefWidth="206.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="52.0">
+               <children>
+                  <Label text="System Location" />
+                  <TextField fx:id="Systemlocation" prefHeight="26.0" prefWidth="206.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="542.0" spacing="60.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="submit" mnemonicParsing="false" onAction="#submit" prefHeight="40.0" prefWidth="120.0" text="submit" />
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="120.0" text="cancel" textFill="#101010" />
+         </children>
+      </HBox>
+   </children>
+</GridPane>

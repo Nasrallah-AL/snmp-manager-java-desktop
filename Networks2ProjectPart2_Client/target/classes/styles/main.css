@@ -1,0 +1,24 @@
+.root {
+    -fx-background-color: #333;
+}
+
+.label {
+    -fx-text-fill: #f1f1f1;
+}
+
+.button {
+    -fx-background-color: "gray";
+    -fx-background-radius: 8;
+    -fx-text-fill: #fff;
+    -fx-border-color: #f2f2f2;
+    -fx-border-radius: 8;
+}
+
+.table-view {
+    -fx-background-color: lightgray;
+}
+
+.table-view .table-column{
+    -fx-background-color: #333;
+    -fx-text-fill: #fff;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.networkproject.client.AuthController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.33331298828125" minWidth="10.0" prefWidth="45.333353678385414" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="533.999979654948" minWidth="10.0" prefWidth="519.999979654948" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.3333740234375" minWidth="10.0" prefWidth="22.666656494140625" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="129.33331298828125" minHeight="10.0" prefHeight="41.33331934611002" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="309.9999936421712" minHeight="10.0" prefHeight="281.33331298828125" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="138.33333333333331" minHeight="10.0" prefHeight="71.00002034505206" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Label text="ID">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="idField" fx:id="idTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="Username">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <TextField id="nameField" fx:id="nameTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="password">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <PasswordField id="passField" fx:id="passTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label id="status1" fx:id="status1" alignment="CENTER" prefHeight="17.0" prefWidth="60.0" textAlignment="CENTER" />
+                        <Button id="verify1" mnemonicParsing="false" onAction="#onVerify1BtnClicked" prefWidth="60.0" text="Verify 1" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label id="status2" fx:id="status2" alignment="CENTER" prefHeight="17.0" prefWidth="60.0" textAlignment="CENTER" />
+                        <Button id="verify2" mnemonicParsing="false" onAction="#onVerify2BtnClicked" prefWidth="60.0" text="Verify 2" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="524.0" GridPane.columnIndex="1">
+         <children>
+            <Label text="SNMP MANAGER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button id="login" mnemonicParsing="false" onAction="#onLoginBtnClicked" prefHeight="25.0" prefWidth="233.0" text="Login" />
+            <Label fx:id="loginStatus" alignment="CENTER" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</GridPane>
